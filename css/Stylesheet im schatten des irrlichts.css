@@ -102,61 +102,73 @@ h4 {
 
     color: rgba(20,0,106,0.31);
 
-    -webkit-animation: bgColor 3000s;
+    -webkit-animation: bgColor 60s ease-in-out infinite;
 
     /* Chrome, Safari */
 
-    -moz-animation: bgColor 3000s;
+    -moz-animation: bgColor 60s ease-in-out infinite;
 
     /* Firefox */
 
-    -o-animation: bgColor 3000s;
+    -o-animation: bgColor 60s ease-in-out infinite;
 
     /* Opera */
 
-    animation: bgColor 3000s;
+    animation: bgColor 60s ease-in-out infinite;
 
 }
 
 @-webkit-keyframes bgColor {
-    from {
+    0% {
         background:rgba(20,0,106,0.31);
     }
-    to {
+    50% {
         background:rgba(255,0,158,0.10);
+    }
+    100% {
+        background:rgba(20,0,106,0.31);
     }
 }
 
 /* Firefox */
 
 @-moz-keyframes bgColor {
-    from {
+    0% {
         background:rgba(20,0,106,0.31);
     }
-    to {
+    50% {
         background:rgba(255,0,158,0.10);
+    }
+    100% {
+        background:rgba(20,0,106,0.31);
     }
 }
 
 /* Opera */
 
 @-o-keyframes bgColor {
-    from {
-        background: rgba(20,0,106,0.31);
+    0% {
+        background:rgba(20,0,106,0.31);
     }
-    to {
+    50% {
         background:rgba(255,0,158,0.10);
+    }
+    100% {
+        background:rgba(20,0,106,0.31);
     }
 }
 
 /* Standard syntax */
 
 @keyframes bgColor {
-    from {
+    0% {
         background:rgba(20,0,106,0.31);
     }
-    to {
-        background: rgba(255,0,158,0.10);
+    50% {
+        background:rgba(255,0,158,0.10);
+    }
+    100% {
+        background:rgba(20,0,106,0.31);
     }
 }
 
