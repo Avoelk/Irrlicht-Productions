@@ -1,7 +1,7 @@
 const waitOneFrame = () => new Promise(resolve => requestAnimationFrame(resolve))
 
 const input = toggle => toggle.querySelector('input')
-const content = toggle => toggle.querySelector('div')
+const content = toggle => toggle.querySelector('.content')
 const isOpen = toggle => !input(toggle).checked
 const setOpen = (toggle, status) => input(toggle).checked = !status
 const label = (toggle, className) => toggle.querySelector(`label.${className}`)

@@ -416,9 +416,9 @@ img {
   font-size:400%;
   }
   
-*/
+
 /* Konfiguriert, wie schnell die toggles auf und zu klappen */
-.toggle div {
+.toggle .content {
  transition: 0.2s height ease-in-out;
 }
  
@@ -469,8 +469,19 @@ img {
 }
 
 .dual-grid .video {
+  position: relative;
   width: 100%;
   height: 100%;
+  background-image: url(/img/loading-spinner.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.dual-grid .video > iframe {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
 }
 
 .dual-grid img {
@@ -501,7 +512,8 @@ img {
   }
 
   .dual-grid .video {
-    height: auto;
+    padding-top: 66%;
+    height: 0;
   }  
 }
 
