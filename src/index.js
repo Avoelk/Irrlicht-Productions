@@ -7,18 +7,23 @@ const setOpen = (toggle, status) => input(toggle).checked = !status
 const label = (toggle, className) => toggle.querySelector(`label.${className}`)
 const hide = el => el.style.display = 'none'
 const show = el => el.style.display = 'block'
+const heightOf = el => {
+  const height = el.offsetHeight;
+  const style = getComputedStyle(el)
+  return height + parseInt(style.marginTop) + parseInt(style.marginBottom)
+}
 
 const open = async div => {
   await waitOneFrame()
   div.style.overflow = 'hidden'
-  const height = div.querySelector('div').clientHeight
+  const height = heightOf(div.querySelector('div'))
   div.style.height = '0'
   await waitOneFrame()
   div.style.height = `${height}px`
 }
 
 const close = async div => {
-  const height = div.querySelector('div').clientHeight
+  const height = heightOf(div.querySelector('div'))
   div.style.height = `${height}px`
   div.style.overflow = 'hidden'
   await waitOneFrame()
