@@ -428,9 +428,14 @@ img {
     position: absolute;
     left: -99999px;
 }
+
+/* Konfiguriert, wie schnell die toggles auf und zu klappen */
+.toggle div {
+ transition: 0.2s height ease-in-out;
+}
  
 /* Gestaltung der labels */
-.toggleBox label {
+.toggle label {
     display: block;
     background: rgba(6, 3, 3, 0.79);
     color: #fff;
