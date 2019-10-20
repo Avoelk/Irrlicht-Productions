@@ -1,4 +1,5 @@
 const waitOneFrame = () => new Promise(resolve => requestAnimationFrame(resolve))
+const waitUntilTransition = () => new Promise(resolve => setTimeout(resolve, 200))
 
 const input = toggle => toggle.querySelector('input')
 const content = toggle => toggle.querySelector('.content')
@@ -13,16 +14,23 @@ const heightOf = el => {
   return height + parseInt(style.marginTop) + parseInt(style.marginBottom)
 }
 
-const open = async div => {
+const open = async toggle => {
+  const div = content(toggle)
   await waitOneFrame()
   div.style.overflow = 'hidden'
   const height = heightOf(div.querySelector('div'))
   div.style.height = '0'
   await waitOneFrame()
   div.style.height = `${height}px`
+  await waitUntilTransition()
+  if (isOpen(toggle)) {  
+    div.style.height = 'auto'
+    div.style.overflow = 'visible'
+  }
 }
 
-const close = async div => {
+const close = async toggle => {
+  const div = content(toggle)
   const height = heightOf(div.querySelector('div'))
   div.style.height = `${height}px`
   div.style.overflow = 'hidden'
@@ -59,10 +67,10 @@ toggles.forEach(toggle => {
 
   input(toggle).addEventListener('change', () => {
     if (isOpen(toggle)) {
-      open(content(toggle))
+      open(toggle)
       setStatus(toggle, 'opened')
     } else {
-      close(content(toggle))
+      close(toggle)
       setStatus(toggle, 'closed')
     }
   })
