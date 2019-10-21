@@ -419,7 +419,7 @@ img {
 
 /* Konfiguriert, wie schnell die toggles auf und zu klappen */
 .toggle .content {
- transition: 0.2s height ease-in-out;
+ transition: 0.4s height ease-in-out;
 }
 
 .toggle input {
