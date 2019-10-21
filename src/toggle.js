@@ -1,5 +1,5 @@
 const waitOneFrame = () => new Promise(resolve => requestAnimationFrame(resolve))
-const waitUntilTransition = () => new Promise(resolve => setTimeout(resolve, 200))
+const waitUntilTransition = () => new Promise(resolve => setTimeout(resolve, 400))
 
 const input = toggle => toggle.querySelector('input')
 const content = toggle => toggle.querySelector('.content')

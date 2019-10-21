@@ -399,7 +399,6 @@ iframe {
   float:right;
   }
   
-  
 img { 
   width: auto; 
   height: 606px;
@@ -419,7 +418,7 @@ img {
 
 /* Konfiguriert, wie schnell die toggles auf und zu klappen */
 .toggle .content {
- transition: 0.2s height ease-in-out;
+ transition: 0.4s height ease-in-out;
 }
 
 .toggle input {
@@ -445,6 +444,22 @@ img {
   border-bottom-style: solid;
   border-bottom-color:rgba(110,0,159,1.00);
 }
+
+.toggle input:not(:checked) ~ div {
+    opacity: 1;
+    padding: .8em;
+    -webkit-transition: opacity 2s ease-in-out;
+    -moz-transition: opacity 2s ease-in-out;
+    -ms-transition: opacity 2s ease-in-out;
+    -o-transition: opacity 2s ease-in-out;
+    transition: opacity 2s ease-in-out;
+  transition: 2s;
+}
+
+.toggle label:hover {
+    background: rgba(252,175,255,0.60);
+}
+
 
 
 /* grid and placement */
@@ -535,7 +550,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 0.4s opacity;
+  transition: 0.8s opacity;
   opacity: 0;
 }
 
