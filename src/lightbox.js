@@ -1,5 +1,5 @@
 const waitOneFrame = () => new Promise(resolve => requestAnimationFrame(resolve))
-const waitUntilTransition = () => new Promise(resolve => setTimeout(resolve, 400))
+const waitUntilTransition = () => new Promise(resolve => setTimeout(resolve, 800))
 
 const close = async div => {
   div.style.opacity = 0

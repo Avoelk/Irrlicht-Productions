@@ -550,7 +550,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 0.4s opacity;
+  transition: 0.8s opacity;
   opacity: 0;
 }
 
