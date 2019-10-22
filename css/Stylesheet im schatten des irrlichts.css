@@ -638,7 +638,7 @@ img {
   max-height: 90%;
   width: auto;
   height: auto;
-  border: 10px solid white;
+  border: 1px solid rgba(143,68,151,1.00);
 }
 
 body.noscroll {
