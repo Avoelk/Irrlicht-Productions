@@ -1,30 +1,30 @@
 @charset "utf-8";
 
 body {
-  background-image: url( "../img/Irrlicht 2-100.jpg");
+  background-image: url( "../img/Irrlicht-2-small.jpg");
 }
 
 @media (min-width: 500px) {
   body {
-    background-image: url( "../img/irrlicht 2-100.jpg");
+    background-image: url( "../img/Irrlicht-2-small.jpg");
   }
 }
 
 @media (min-width: 1000px) {
   body {
-    background-image: url( "../img/Irrlicht 2-100.jpg");
+    background-image: url( "../img/Irrlicht-2-small.jpg");
   }
 }
 
 @media (min-width: 1500px) {
   body {
-    background-image: url( "../img/Irrlicht 2-100.jpg");
+    background-image: url( "../img/Irrlicht-2-small.jpg");
   }
 }
 
 @media (min-width: 2000px) {
   body {
-    background-image: url( "../img/Irrlicht 2-100.jpg");
+    background-image: url( "../img/Irrlicht-2-small.jpg");
   }
 }
 
@@ -42,13 +42,12 @@ p {
   color: rgba(255,255,255,1.00);
   font-weight: lighter;
   font-size: 120%;
-  text-shadow: 0px 0px 1px rgba(158,0,0,1.00);  
   letter-spacing:0.1rem;
-  background-color: rgba(123,6,26,0.40);
-  padding-top:5px;
-  padding-bottom: 5px;
-  padding-right:3px;
-  padding-left:3px;
+  background-color: rgba(0,0,0,0.69);
+  padding-top:10px;
+  padding-bottom: 10px;
+  padding-right:10px;
+  padding-left:10px;
   border-radius:5px;
 	
   }
@@ -66,20 +65,20 @@ p.impressum {
 }
 h2 {
   color: rgba(255,255,255,1.00);
-  text-shadow: 0px 0px 3px rgba(158,0,0,1.00);
+ 
 
   }
   
 h3 {
   color: rgba(255,255,255,1.00);
-  text-shadow: 0px 0px 3px rgba(158,0,0,1.00);
+ 
   font-size:200%;
   letter-spacing:0.1rem;
   }
   
 h4 {
   color: rgba(255,255,255,1.00);
-  text-shadow: 0px 0px 3px rgba(158,0,0,1.00);
+ 
   font-size:120%;
   letter-spacing:0.2rem;
   }
@@ -105,10 +104,10 @@ h4 {
   padding-top:15px;
   border-top-width: 1px;
   border-top-style: solid;
-  border-top-color:rgba(158,0,0,1.00);
+  border-top-color:rgba(144,0,158,0.80);
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color:rgba(158,0,0,1.00);
+  border-bottom-color:rgba(144,0,158,0.80);
   }
   
 .start2 {
@@ -143,7 +142,7 @@ h4 {
 
 .picture {
 
-    color: rgba(255,0,29,0.26);
+    color: rgba(0,58,255,0.26);
 
     -webkit-animation: bgColor 60s ease-in-out infinite;
 
@@ -164,13 +163,13 @@ h4 {
 
 @-webkit-keyframes bgColor {
     0% {
-        background:rgba(255,0,29,0.26);
+        background: rgba(0,58,255,0.26);
     }
     50% {
-        background:rgba(158,0,0,1.00);
+        background:rgba(144,0,158,0.20);
     }
     100% {
-        background:rgba(255,0,29,0.26);
+        background: rgba(0,58,255,0.26);
     }
 }
 
@@ -178,13 +177,13 @@ h4 {
 
 @-moz-keyframes bgColor {
     0% {
-        background:rgba(255,0,29,0.26);
+        background: rgba(0,58,255,0.26);
     }
     50% {
-        background:rgba(158,0,0,0.30);
+        background:rgba(144,0,158,0.20);
     }
     100% {
-        background:rgba(255,0,29,0.26);
+        background: rgba(0,58,255,0.26);
     }
 }
 
@@ -192,13 +191,13 @@ h4 {
 
 @-o-keyframes bgColor {
     0% {
-        background:rgba(255,0,29,0.26);
+        background: rgba(0,58,255,0.26);
     }
     50% {
-        background:rgba(158,0,0,0.30);
+        background:rgba(144,0,158,0.20);
     }
     100% {
-        background:rgba(255,0,29,0.26);
+        background: rgba(0,58,255,0.26);
     }
 }
 
@@ -206,13 +205,13 @@ h4 {
 
 @keyframes bgColor {
     0% {
-        background:rgba(255,0,29,0.26);
+        background: rgba(0,58,255,0.26);
     }
     50% {
-        background:rgba(158,0,0,0.30);
+        background:rgba(144,0,158,0.20);
     }
     100% {
-        background:rgba(255,0,29,0.26);
+        background: rgba(0,58,255,0.26);
     }
 }
 
@@ -265,7 +264,7 @@ Header Bereich
 
   font-size: 150%;
   margin-top: -3%;  
-  text-shadow: 0px 0px 1px rgba(255,86,105,0.90);
+  text-shadow: 0px 0px 1px rgba(144,0,158,0.90);
   color: rgba(255,0,29,0.26);   
 }
 
@@ -482,10 +481,10 @@ img {
   transition: 2s;
   border-top-width: 1px;
   border-top-style: solid;
-  border-top-color: rgba(255,0,0,1.00);
+  border-top-color: rgba(144,0,158,0.80);
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: rgba(158,0,0,1.00);
+  border-bottom-color: rgba(144,0,158,0.80);
 }
 
 .toggle input:not(:checked) ~ div {
@@ -502,7 +501,7 @@ img {
 }
 
 .toggle label:hover {
-    background:rgba(158,0,0,0.80);
+    background: rgba(45,255,19,0.40);
 }
 
 
@@ -693,7 +692,7 @@ i:active {
   }
   
 i:hover {
-  color:rgba(158,0,0,0.80);
+  color:rgba(45,255,19,0.82);
   font-size: 152%;
     transition: 1s;
   }
@@ -723,7 +722,7 @@ a.extern:active {
   }
   
 a.extern:hover {
-  color: rgba(158,0,0,0.80);
+  color: rgba(45,255,19,0.82);
   font-size: 101.5%;
     transition: 1s;
   }
